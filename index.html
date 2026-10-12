@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="brand">
+        <h1>Facebook</h1>
+        <input type="search" id="searchInput" placeholder="Search ">
+    </div>
+
+    <nav class="nav-icons">
+        <button title="Home">🏠</button>
+        <button title="Friends">👥</button>
+        <button title="Videos">▶️</button>
+        <button title="Notifications">🔔</button>
+        <button title="Messages">💬</button>
+    </nav>
+
+    <div class="nav-profile">
+        <img src="https://i.pravatar.cc/100?img=12" alt="Profile">
+        <span>Chinonso</span>
+    </div>
+</header>
+
+<main class="layout">
+
+    <aside class="sidebar">
+        <div class="sidebar-profile">
+            <img src="https://i.pravatar.cc/100?img=12" alt="Profile">
+            <strong>Chinonso</strong>
+        </div>
+
+        <a href="#feed">🏠 Home</a>
+        <a href="#stories">📖 Stories</a>
+        <a href="#friends">👥 Friends</a>
+        <a href="#feed">🎬 Videos</a>
+        <a href="#contacts">💬 Contacts</a>
+        <a href="#feed">⚙️ Settings</a>
+    </aside>
+
+    <section class="feed" id="feed">
+
+        <div class="stories" id="stories">
+            <div class="story create-story">
+                <img src="https://i.pravatar.cc/300?img=12" alt="Your story">
+                <button id="storyButton">+</button>
+                <p>Create story</p>
+            </div>
+
+            <div class="story">
+                <img src="https://i.pravatar.cc/300?img=11" alt="John's story">
+                <span class="story-avatar">
+                    <img src="https://i.pravatar.cc/100?img=11" alt="">
+                </span>
+                <p>John</p>
+            </div>
+
+            <div class="story">
+                <img src="https://i.pravatar.cc/300?img=47" alt="Mary's story">
+                <span class="story-avatar">
+                    <img src="https://i.pravatar.cc/100?img=47" alt="">
+                </span>
+                <p>Mary</p>
+            </div>
+
+            <div class="story">
+                <img src="https://i.pravatar.cc/300?img=13" alt="David's story">
+                <span class="story-avatar">
+                    <img src="https://i.pravatar.cc/100?img=13" alt="">
+                </span>
+                <p>David</p>
+            </div>
+        </div>
+
+        <div class="composer">
+            <div class="composer-top">
+                <img src="https://i.pravatar.cc/100?img=12" alt="Your profile">
+                <input
+                    type="text"
+                    id="postText"
+                    placeholder="What's on your mind, Chinonso?"
+                >
+            </div>
+
+            <div id="imagePreview"></div>
+
+            <div class="composer-actions">
+                <label for="imageInput">🖼️ Photo</label>
+                <button id="feelingButton">😊 Feeling</button>
+                <button id="liveButton">📹 Live video</button>
+            </div>
+
+            <input type="file" id="imageInput" accept="image/*" hidden>
+
+            <button class="primary-button" id="postButton">Post</button>
+        </div>
+
+        <div id="posts">
+
+            <article class="post" data-search="john peter welcome social media">
+                <div class="post-header">
+                    <img src="https://i.pravatar.cc/100?img=11" alt="John">
+                    <div>
+                        <strong>John Peter</strong>
+                        <small>2 hours ago · 🌎</small>
+                    </div>
+                    <button class="more-button" title="More options">•••</button>
+                </div>
+
+                <p class="post-text">
+                    Welcome to MySocial! 🎉 Let's connect with friends and share our moments.
+                </p>
+
+                <img
+                    class="post-photo"
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80"
+                    alt="Beautiful landscape"
+                >
+
+                <div class="post-stats">
+                    <span class="like-count">👍 12 likes</span>
+                    <span class="comment-count">3 comments</span>
+                </div>
+
+                <div class="post-actions">
+                    <button class="like-button">👍 Like</button>
+                    <button class="comment-button">💬 Comment</button>
+                    <button class="share-button">↗️ Share</button>
+                </div>
+
+                <div class="comments"></div>
+            </article>
+
+            <article class="post" data-search="mary james friends">
+                <div class="post-header">
+                    <img src="https://i.pravatar.cc/100?img=47" alt="Mary">
+                    <div>
+                        <strong>Mary James</strong>
+                        <small>Yesterday · 🌎</small>
+                    </div>
+                    <button class="more-button" title="More options">•••</button>
+                </div>
+
+                <p class="post-text">
+                    Enjoying the beautiful day! ❤️
+                </p>
+
+                <div class="post-stats">
+                    <span class="like-count">👍 5 likes</span>
+                    <span class="comment-count">0 comments</span>
+                </div>
+
+                <div class="post-actions">
+                    <button class="like-button">👍 Like</button>
+                    <button class="comment-button">💬 Comment</button>
+                    <button class="share-button">↗️ Share</button>
+                </div>
+
+                <div class="comments"></div>
+            </article>
+
+        </div>
+    </section>
+
+    <aside class="right-sidebar" id="contacts">
+        <h3>Contacts</h3>
+
+        <div class="contact">
+            <img src="https://i.pravatar.cc/100?img=11" alt="">
+            <span>David Peter</span>
+            <i></i>
+        </div>
+
+        <div class="contact">
+            <img src="https://i.pravatar.cc/100?img=47" alt="">
+            <span>Mary patience</span>
+            <i></i>
+        </div>
+
+        <div class="contact">
+            <img src="https://i.pravatar.cc/100?img=13" alt="">
+            <span>Dickson</span>
+            <i></i>
+        </div>
+
+        <div class="contact">
+            <img src="https://i.pravatar.cc/100?img=44" alt="">
+            <span>Jones</span>
+            <i></i>
+        </div>
+    </aside>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
